@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/app_name"
+        android:textColor="@color/blue"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vp_artikel"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/ll_slider_dots"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_dashboard_menu"
+                android:padding="16dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="@string/txt_judul_fitur"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/arabic_arihna"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/ll_sunnah_qauliyah"
+                    android:background="@drawable/bg_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="7dp">
+
+                    <ImageView
+                        android:src="@drawable/ic_doa"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp" />
+
+                    <TextView
+                        android:text="@string/txt_sunnah_qauliyah"
+                        android:textSize="18sp"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_dzikir_setiap_saat"
+                    android:background="@drawable/bg_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="7dp">
+
+                    <ImageView
+                        android:src="@drawable/ic_time"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txt_dzikir_setiap_saat"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginStart="16dp"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_dzikir_doa_harian"
+                    android:background="@drawable/bg_item"
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="7dp">
+
+                    <ImageView
+                        android:src="@drawable/ic_dzikir"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp" />
+
+                    <TextView
+                        android:textSize="18sp"
+                        android:text="@string/txt_dzikir_doa_harian"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/bg_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="7dp">
+
+                    <ImageView
+                        android:src="@drawable/ic_pagi_petang"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp" />
+
+                    <TextView
+                        android:id="@+id/ll_dzikir_pagi_petang"
+                        android:text="@string/txt_dzikir_pagi_petang"
+                        android:textSize="18sp"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
